@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CategoriasActivity"
+    tools:layout_editor_absoluteY="20dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:background="@drawable/side_nav_bar"
+        android:orientation="vertical"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnLogo"
+                android:layout_width="135dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/logo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="204dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nav_header_subtitle" />
+
+                <TextView
+                    android:layout_width="207dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="@dimen/nav_header_vertical_spacing"
+                    android:text="Categorias"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="28dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                    <ImageView
+                        android:id="@+id/imageView14"
+                        android:layout_width="147dp"
+                        android:layout_height="120dp"
+                        tools:srcCompat="@drawable/panaderia2" />
+
+                    <LinearLayout
+                        android:layout_width="213dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/nombreCategoria01"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Pánaderia" />
+
+                        <TextView
+                            android:id="@+id/Direccion01"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Direccion:" />
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <Button
+                            android:id="@+id/btnCategoria01"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="Ir a Categoria" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="25dp">
+
+                    <ImageView
+                        android:id="@+id/imageView15"
+                        android:layout_width="147dp"
+                        android:layout_height="120dp"
+                        tools:srcCompat="@drawable/bebidas" />
+
+                    <LinearLayout
+                        android:layout_width="213dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/nombreCategoria02"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Bebidas" />
+
+                        <TextView
+                            android:id="@+id/Direccion02"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Direccion:" />
+
+                        <TextView
+                            android:id="@+id/textView21"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <Button
+                            android:id="@+id/btnCategoria02"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="Ir a Categoria" />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="25dp">
+
+                    <ImageView
+                        android:id="@+id/imageView16"
+                        android:layout_width="147dp"
+                        android:layout_height="120dp"
+                        tools:srcCompat="@drawable/comida_rapida" />
+
+                    <LinearLayout
+                        android:layout_width="213dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/nombreCategoria03"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Comida Rapida" />
+
+                        <TextView
+                            android:id="@+id/Direccion03"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Direccion:" />
+
+                        <TextView
+                            android:id="@+id/textView23"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <Button
+                            android:id="@+id/btnCategoria03"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="Ir a Categoria" />
+
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="25dp">
+
+                    <ImageView
+                        android:id="@+id/imageView25"
+                        android:layout_width="147dp"
+                        android:layout_height="120dp"
+                        tools:srcCompat="@drawable/viveres2" />
+
+                    <LinearLayout
+                        android:layout_width="213dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/nombreCategoria04"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Viveres" />
+
+                        <TextView
+                            android:id="@+id/Direccion04"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Direccion:" />
+
+                        <TextView
+                            android:id="@+id/textView30"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <Button
+                            android:id="@+id/btnCategoria04"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="Ir a Categoria" />
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
